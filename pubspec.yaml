@@ -1,0 +1,194 @@
+name: khaan_burees
+description: HaltSteam
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  flutter_spinkit: ^3.1.0
+  sqflite: ^1.1.6+1
+  path: ^1.6.2
+  path_provider: ^1.1.0
+  flutter_masked_text: ^0.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - images/t001.jpg
+    - images/t002.jpg
+    - images/t003.jpg
+    - images/t004.jpg
+    - images/t005.jpg
+    - images/t006.jpg
+    - images/ic_logo_001.jpg
+    - images/ic_logo.png
+    - images/ic_car_minibus.png
+    - images/ic_car_jeep.png
+    - images/ic_car_car.png
+    - images/ic_car_bus.png
+    - images/ic_bus_bus.png
+    - images/belen_zurag/1r.jpg
+    - images/belen_zurag/1f.jpg
+    - images/belen_zurag/2r.jpg
+    - images/belen_zurag/2f.jpg
+    - images/belen_zurag/3f.jpg
+    - images/belen_zurag/3r.jpg
+    - images/belen_zurag/4f.jpg
+    - images/belen_zurag/4r.jpg
+    - images/belen_zurag/5f.jpg
+    - images/belen_zurag/5r.jpg
+    - images/belen_zurag/6f.jpg
+    - images/belen_zurag/6r.jpg
+    - images/belen_zurag/7f.jpg
+    - images/belen_zurag/7r.jpg
+    - images/belen_zurag/8f.jpg
+    - images/belen_zurag/8r.jpg
+    - images/belen_zurag/9f.jpg
+    - images/belen_zurag/9r.jpg
+    - images/belen_zurag/10f.jpg
+    - images/belen_zurag/10r.jpg
+    - images/belen_zurag/11f.jpg
+    - images/belen_zurag/11r.jpg
+    - images/belen_zurag/12f.jpg
+    - images/belen_zurag/12r.jpg
+    - images/belen_zurag/13f.jpg
+    - images/belen_zurag/13r.jpg
+    - images/belen_zurag/14f.jpg
+    - images/belen_zurag/14r.jpg
+    - images/belen_zurag/15f.jpg
+    - images/belen_zurag/15r.jpg
+    - images/belen_zurag/16f.jpg
+    - images/belen_zurag/16r.jpg
+    - images/belen_zurag/17f.jpg
+    - images/belen_zurag/17r.jpg
+    - images/belen_zurag/18f.jpg
+    - images/belen_zurag/18r.jpg
+    - images/belen_zurag/19f.jpg
+    - images/belen_zurag/19r.jpg
+    - images/belen_zurag/20f.jpg
+    - images/belen_zurag/20r.jpg
+    - images/belen_zurag/21f.jpg
+    - images/belen_zurag/21r.jpg
+    - images/belen_zurag/22f.jpg
+    - images/belen_zurag/22r.jpg
+    - images/belen_zurag/23f.jpg
+    - images/belen_zurag/23r.jpg
+    - images/belen_zurag/24f.jpg
+    - images/belen_zurag/24r.jpg
+    - images/belen_zurag/25f.jpg
+    - images/belen_zurag/25r.jpg
+    - images/belen_zurag/26f.jpg
+    - images/belen_zurag/26r.jpg
+    - images/belen_zurag/27f.jpg
+    - images/belen_zurag/27r.jpg
+    - images/belen_zurag/28f.jpg
+    - images/belen_zurag/28r.jpg
+    - images/belen_zurag/29f.jpg
+    - images/belen_zurag/29r.jpg
+    - images/belen_zurag/30f.jpg
+    - images/belen_zurag/30r.jpg
+    - images/belen_zurag/31f.jpg
+    - images/belen_zurag/31r.jpg
+    - images/belen_zurag/32f.jpg
+    - images/belen_zurag/32r.jpg
+    - images/belen_zurag/33f.jpg
+    - images/belen_zurag/33r.jpg
+    - images/belen_zurag/34f.jpg
+    - images/belen_zurag/34r.jpg
+    - images/belen_zurag/35f.jpg
+    - images/belen_zurag/35r.jpg
+    - images/belen_zurag/36f.jpg
+    - images/belen_zurag/36r.jpg
+    - images/belen_zurag/37f.jpg
+    - images/belen_zurag/37r.jpg
+    - images/belen_zurag/38f.jpg
+    - images/belen_zurag/38r.jpg
+    - images/belen_zurag/39f.jpg
+    - images/belen_zurag/39r.jpg
+    - images/belen_zurag/40f.jpg
+    - images/belen_zurag/40r.jpg
+    - images/belen_zurag/41f.jpg
+    - images/belen_zurag/41r.jpg
+    - images/belen_zurag/42f.jpg
+    - images/belen_zurag/42r.jpg
+    - images/belen_zurag/43f.jpg
+    - images/belen_zurag/43r.jpg
+    - images/belen_zurag/44f.jpg
+    - images/belen_zurag/44r.jpg
+    - images/belen_zurag/45f.jpg
+    - images/belen_zurag/45r.jpg
+    - images/belen_zurag/46f.jpg
+    - images/belen_zurag/46r.jpg
+    - images/belen_zurag/47f.jpg
+    - images/belen_zurag/47r.jpg
+    - images/belen_zurag/48f.jpg
+    - images/belen_zurag/48r.jpg
+    - images/belen_zurag/49f.jpg
+    - images/belen_zurag/49r.jpg
+    - images/belen_zurag/50f.jpg
+    - images/belen_zurag/50r.jpg
+    - images/belen_zurag/51f.jpg
+    - images/belen_zurag/51r.jpg
+    - images/belen_zurag/52f.jpg
+    - images/belen_zurag/52r.jpg
+    - images/belen_zurag/53f.jpg
+    - images/belen_zurag/53r.jpg
+    - images/belen_zurag/54f.jpg
+    - images/belen_zurag/54r.jpg
+    - images/belen_zurag/55f.jpg
+    - images/belen_zurag/55r.jpg
+    - images/belen_zurag/56f.jpg
+    - images/belen_zurag/56r.jpg
+    - images/belen_zurag/57f.jpg
+    - images/belen_zurag/57r.jpg
+    - images/texture/IMG_4491.JPG
+    - images/texture/IMG_4501.JPG
+    - images/texture/IMG_4505.JPG
+    - images/texture/IMG_4525.JPG
+    - images/texture/IMG_4539.JPG
+    - images/texture/IMG_4541.JPG
+    - images/texture/IMG_4546.JPG
+    - images/texture/IMG_4547.JPG
+    - images/texture/IMG_4561.JPG
+    - images/texture/IMG_4568.JPG
+    - images/texture/IMG_4569.JPG
+    - images/texture/IMG_4573.JPG
+    - images/texture/IMG_4575.JPG
+    - images/texture/IMG_4576.JPG
+    - images/texture/IMG_4577.JPG
+    - images/texture/IMG_4578.JPG
+    - images/texture/IMG_4581.JPG
+    - images/texture/IMG_4579.JPG
+    - images/texture/IMG_4586.JPG
+    - images/texture/IMG_4587.JPG
+    - images/texture/IMG_4588.JPG
+    - images/texture/IMG_4589.JPG
+    - images/texture/IMG_4590.JPG
+    - images/texture/IMG_4595.JPG
+    - images/texture/IMG_4596.JPG
+    - images/texture/IMG_4597.JPG
+    - images/texture/IMG_4606.JPG
+
+
+
