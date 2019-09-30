@@ -382,6 +382,7 @@ class ftexture extends State<Ftexture>{
                     itemCount: datas.length,
                     shrinkWrap: false,
                     scrollDirection: Axis.horizontal,
+                    addAutomaticKeepAlives: false,
                   ),
                 ),
               ),

@@ -26,37 +26,14 @@ class admin extends State<Aadmin>{
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration.zero, (){
-      init();
-    });
-
+    init();
   }
 
-  init(){
-    itemCount().then((too){
-      print("_______$too");
-      if(too < 1){
-        insertAll().then((_){
-          getItems().then((_datas){
-            data = _datas;
-            setState(() {
-
-            });
-            print("______1> $data");
-          });
-
-        });
-      }else{
-        getItems().then((_datas){
-          data = _datas;
-          setState(() {
-
-          });
-          print("______2> $data");
-        });
-      }
-    }).catchError((err){
-      print("________$err");
+  Future init() async{
+    getItems().then((d){
+      setState(() {
+        data = d;
+      });
     });
   }
 

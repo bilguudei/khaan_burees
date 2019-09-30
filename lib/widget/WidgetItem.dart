@@ -59,7 +59,7 @@ class WidgetItem extends StatelessWidget{
                 tag: "${item["img"]}",
                 child: CircleAvatar(
 //              child: Image.asset("images/${item["img"]}", width: 300, height: 300,),
-                  backgroundImage: AssetImage("images/${item["img"]}"),
+                  backgroundImage: AssetImage("images/texture/${item["img"]}"),
                   radius: 55,
                 ),
               ),

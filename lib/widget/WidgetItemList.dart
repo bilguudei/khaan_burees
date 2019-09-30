@@ -30,7 +30,7 @@ class widgetItemList extends State<WidgetItemList>{
 
   @override
   void dispose() {
-    timer.cancel();
+//    timer.cancel();
     super.dispose();
   }
 

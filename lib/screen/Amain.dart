@@ -20,6 +20,7 @@ import 'package:khaan_burees/seat/NuruuSide.dart';
 import 'package:khaan_burees/seat/SuudalSide.dart';
 import 'package:khaan_burees/seat/DoodSide.dart';
 import 'package:khaan_burees/util/ColorSeat.dart';
+import 'package:khaan_burees/util/insertall.dart';
 import 'package:khaan_burees/widget/WidgetMenu.dart';
 import 'package:khaan_burees/widget/WidgetItemList.dart';
 import 'package:khaan_burees/widget/TxtTotal.dart';
@@ -42,20 +43,46 @@ class Amain extends StatefulWidget{
 class main extends State<Amain>{
   String page = "belen";
   List datas = new List();
+  List data = new List();
 
   @override
   void initState() {
     super.initState();
-    init();
+    Future.delayed(Duration.zero, (){
+      init();
+    });
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.landscapeRight,
       DeviceOrientation.landscapeLeft,
     ]);
   }
 
-  Future init() async{
-    datas = await getItems();
-    setState(() {});
+  init(){
+    itemCount().then((too){
+      print("_______$too");
+      if(too < 1){
+        insertAll().then((_){
+          getItems().then((_datas){
+            data = _datas;
+            setState(() {
+
+            });
+            print("______1> $data");
+          });
+
+        });
+      }else{
+        getItems().then((_datas){
+          data = _datas;
+          setState(() {
+
+          });
+          print("______2> $data");
+        });
+      }
+    }).catchError((err){
+      print("________$err");
+    });
   }
 
 
