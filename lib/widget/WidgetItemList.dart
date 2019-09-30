@@ -36,7 +36,7 @@ class widgetItemList extends State<WidgetItemList>{
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return widget.img.length > 0 ? GestureDetector(
       onTap: showButton,
       child: SizedBox(
           width: 120,
@@ -82,7 +82,7 @@ class widgetItemList extends State<WidgetItemList>{
             alignment: Alignment.center,
           )
       ),
-    );
+    ) : Container();
   }
 
   showButton(){
